@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState, useTransition } from 'react'
 import TabButton from './TabButton'
+import AboutImage from '../../public/Images/hero-img.png'
 
 
 const TAB_DATA = [
@@ -59,7 +60,7 @@ const AboutSection = () => {
             priority
             unoptimized
             alt='Image'
-            src={'/images/971.jpg'}
+            src={AboutImage.src}
             width={500}
             height={500}
             />

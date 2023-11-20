@@ -3,6 +3,8 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 import Link from 'next/link'
+import HeroImage from '../../public/Images/hero-img.png'
+
 
 const Hero = () => {
   return (
@@ -46,7 +48,7 @@ const Hero = () => {
         priority
         unoptimized
           className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-          src='/images/hero-img.png'
+          src={HeroImage.src}
           alt='hero image'
           width={300}
           height={300}
