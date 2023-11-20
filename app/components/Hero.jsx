@@ -44,6 +44,7 @@ const Hero = () => {
         <div className="rounded-full bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] relative">
         <Image
         priority
+        unoptimized
           className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
           src='/images/hero-img.png'
           alt='hero image'
