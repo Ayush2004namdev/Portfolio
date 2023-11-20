@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import React, { useState, useTransition } from 'react'
 import TabButton from './TabButton'
-import AboutImage from '../../public/Images/hero-img.png'
+import AboutImage from '../../public/Images/971.jpg'
 
 
 const TAB_DATA = [
