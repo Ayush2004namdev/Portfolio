@@ -32,15 +32,6 @@ export async function POST(req){
     }
 
     await sendMessage()
-    transporter.sendMail(mailOptions, function(err,info){
-        if (err) {
-            throw new Error(err);
-          } else {
-            console.log("Email Sent",info);
-            return true;
-          }
-    })
-
 
     return new Response('done')
 }
