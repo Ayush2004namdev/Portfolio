@@ -18,10 +18,10 @@ export async function POST(req){
         transporter.verify((err,success) => {
             if (err) {
                 console.log(err);
-                reject(err);
+                rej(err);
             } else {
                 console.log("Server is ready to take our messages");
-                resolve(success);
+                res(success);
             }
         })
     })
