@@ -25,7 +25,7 @@ export async function POST(req){
         if (err) {
             throw new Error(err);
           } else {
-            console.log("Email Sent");
+            console.log("Email Sent",info);
             return true;
           }
     })
