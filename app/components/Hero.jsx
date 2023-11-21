@@ -30,7 +30,7 @@ const Hero = () => {
         repeat={Infinity}
         />
         </h1>
-      <p className='text-[#ADB7BE] text-lg lg:text-xl mr-24'>Hii I am Ayush, A Aspiring Web developer trying to make my place in this tech era with full of inspirations.</p>
+      <p className='text-[#ADB7BE] text-lg lg:text-xl md:mr-24 mx-auto'>Hii I am Ayush, A Aspiring Web developer trying to make my place in this tech era with full of inspirations.</p>
       <div className="pt-4">
         <Link href={'#contact'}>
         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 via-purple-600 to-pink-400 text-white hover:bg-slate-200 font-semibold'>Hire Me</button>
