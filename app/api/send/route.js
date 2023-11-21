@@ -21,7 +21,7 @@ export async function POST(req){
         text:text
     }
     const sendMessage = async () => {
-        transporter.sendMail(mailOptions, function(err,info){
+        await transporter.sendMail(mailOptions, function(err,info){
             if (err) {
                 throw new Error(err);
               } else {
