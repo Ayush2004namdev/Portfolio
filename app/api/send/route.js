@@ -14,24 +14,37 @@ export async function POST(req){
         }
     })
 
+    await new Promise((res,rej) => {
+        transporter.verify((err,success) => {
+            if (err) {
+                console.log(err);
+                reject(err);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        })
+    })
+
     const mailOptions = {
         from:SMTP_EMAIL,
         to:'ayushnamdev2004@gmail.com',
         subject:`mail from ${to} subject : ${subject}`,
         text:text
     }
-    const sendMessage = async () => {
-        await transporter.sendMail(mailOptions, function(err,info){
+
+    await new Promise((res,rej) => {
+        transporter.sendMail(mailOptions, function(err,info){
             if (err) {
-                throw new Error(err);
+                console.log(err)
+                rej(err)
               } else {
                 console.log("Email Sent",info);
+                res(info)
                 return true;
               }
         })
-    }
-
-    await sendMessage()
+    })
 
     return new Response('done')
 }
