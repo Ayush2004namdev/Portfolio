@@ -16,19 +16,22 @@ export async function POST(req){
 
     const mailOptions = {
         from:SMTP_EMAIL,
-        to:'ayush2004namdev@gmail.com',
+        to:'ayushnamdev2004@gmail.com',
         subject:`mail from ${to} subject : ${subject}`,
         text:text
     }
+    const sendMessage = async () => {
+        transporter.sendMail(mailOptions, function(err,info){
+            if (err) {
+                throw new Error(err);
+              } else {
+                console.log("Email Sent",info);
+                return true;
+              }
+        })
+    }
 
-    transporter.sendMail(mailOptions, function(err,info){
-        if (err) {
-            throw new Error(err);
-          } else {
-            console.log("Email Sent");
-            return true;
-          }
-    })
+    await sendMessage()
 
     return new Response('done')
 }
