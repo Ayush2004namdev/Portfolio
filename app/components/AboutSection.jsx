@@ -26,7 +26,7 @@ const TAB_DATA = [
         content:(
             <ul className='list-disc flex flex-col gap-2'>
                 <li>B.Tech 2025 Graduate</li>
-                <li>Full Stack Web Developer</li>
+                <li>MERN Stack Developer</li>
             </ul>
         )
     },
@@ -35,6 +35,7 @@ const TAB_DATA = [
         id:'experience',
         content:(
             <ul className='list-disc flex flex-col gap-2'>
+                <li>SIH 2K23 Winner</li>
                 <li>Intern at XOVEX IT</li>
             </ul>
         )
