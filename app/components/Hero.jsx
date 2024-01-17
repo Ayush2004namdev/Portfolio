@@ -35,7 +35,7 @@ const Hero = () => {
         <Link href={'#contact'}>
         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-400 via-purple-600 to-pink-400 text-white hover:bg-slate-200 font-semibold'>Hire Me</button>
         </Link>
-        <Link href={'https://drive.google.com/file/d/1G4Pl1MZ8T-K9pOrrKaJRCSjfcm6hmD80/view?usp=sharing'}  target='_blank'>
+        <Link href={'https://drive.google.com/file/d/1Ls9kKZzcG_3nJbdG1f8o72QasMsW8I-9/view?usp=sharing'}  target='_blank'>
         <button className='px-1 py-1 w-full sm:w-fit bg-gradient-to-br from-blue-400 via-purple-400 to-pink-600 bg-transparent rounded-full mt-2 border hover:text-slate-800 text-white'>
           <span className="block px-5 py-2 rounded-full bg-[#121212]">Download CV</span>
         </button>
