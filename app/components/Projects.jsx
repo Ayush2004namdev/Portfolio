@@ -7,8 +7,28 @@ import Image2 from '../../public/Images/project2.png'
 import Image3 from '../../public/Images/project3.png'
 import Image4 from '../../public/Images/project4.png'
 import Image5 from '../../public/Images/project5.png'
+import Image6 from '../../public/Images/project6.png'
+import Image7 from '../../public/Images/project7.png'
 
 const projectData = [
+    {
+        id:6,
+        title:'WYLD',
+        description:'A Show of FrontEnd development and design skills with a fully functional website for a company.',
+        imgUrl:Image7.src,
+        gitUrl:'https://github.com/Ayush2004namdev/WYLD',
+        previewUrl:'https://wyld-nine.vercel.app/',
+        tags:['All','Web']
+    },
+    {
+        id:7,
+        title:'Chat APP',
+        description:'A fully functional chat web-app with rooms and user authentication. Come and lets have a chat!!!.',
+        imgUrl:Image6.src,
+        gitUrl:'https://github.com/Ayush2004namdev/client/',
+        previewUrl:'https://client-seven-beige-77.vercel.app/',
+        tags:['All','Web']
+    },
     {
         id:3,
         title:'Netflix Clone',
